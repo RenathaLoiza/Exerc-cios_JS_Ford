@@ -5,7 +5,11 @@
 
 let nome = [prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "),prompt("Digite um nome: ") ];
 
-alert(nome.);
-alert(nome[0])
+let bucarNome=("Digite o nome que deseja procurar);
 
-length
+  if(bucarNome === nome){
+   alert(`O nome ${bucarNome} está na lista`);
+  }
+else {
+  alert(`O nome ${bucarNome} não esta na lista`);
+}

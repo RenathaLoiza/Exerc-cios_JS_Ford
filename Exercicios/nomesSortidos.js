@@ -5,6 +5,7 @@
 
 // let nome = [prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "),prompt("Digite um nome: ") ];
 
+<<<<<<< HEAD
 let nomes=[]
 let quantidade= parseInt(prompt("Quantos nomes deseja colocar na lista"));
 for (let i =0; i< quantidade; i++ ){
@@ -19,4 +20,13 @@ if (encontrado){
 }
 else{
     alert(`Não achei o nome ${nomeBusca}`);
+=======
+let bucarNome=("Digite o nome que deseja procurar);
+
+  if(bucarNome === nome){
+   alert(`O nome ${bucarNome} está na lista`);
+  }
+else {
+  alert(`O nome ${bucarNome} não esta na lista`);
+>>>>>>> 6ed92e8b3aa132011b3140f8e5f6174174a213cc
 }

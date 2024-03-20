@@ -3,9 +3,20 @@
 //depois escrever a mensagem ACHEI, se o nome estiver
 // entre os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI caso contrário.
 
-let nome = [prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "),prompt("Digite um nome: ") ];
+// let nome = [prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "),prompt("Digite um nome: ") ];
 
-alert(nome.);
-alert(nome[0])
+let nomes=[]
+let quantidade= parseInt(prompt("Quantos nomes deseja colocar na lista"));
+for (let i =0; i< quantidade; i++ ){
+    let nome =prompt("Qual seu nome?");
+    nomes.push(nome);
+}
+let nomeBusca=prompt("Qual nome deseja buscar");
+let encontrado = nomes.includes(nomeBusca)
 
-length
+if (encontrado){
+    alert(`ACHEI o nome ${nomeBusca}`);
+}
+else{
+    alert(`Não achei o nome ${nomeBusca}`);
+}

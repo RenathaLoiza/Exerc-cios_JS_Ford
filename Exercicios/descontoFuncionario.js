@@ -19,7 +19,7 @@ let opcoes= parseInt(prompt(`você é cliente
 let totalCompra= prompt("Valor total da compra?");
 let totalDescFuncionario = totalCompra * 0.10;
 let totalDescVip = totalCompra*0.05;
-let totalDescFuncionario1=totalCompra-totalDescFuncionario;
+let totalDescFuncionario1 = totalCompra-totalDescFuncionario;
 let totalDescVip1=totalCompra-totalDescVip;
 
 //processamento de dados

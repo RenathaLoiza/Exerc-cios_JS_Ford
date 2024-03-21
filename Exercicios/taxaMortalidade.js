@@ -11,6 +11,7 @@
 // verificar o que o usuario vai querer calcular (natalidade ou mortalidade)
 // determinar o número de crianças nascidas e o número de habitantes para natalidade
 // determinar o número de óbitos e o número de habitantes para mortalidade
+export function Mortalidade() {
 let tipoDado =parseInt(prompt(`Qual voce deseja calcular
 1-Natalidade
 2-Mortalidade`));
@@ -33,6 +34,7 @@ switch (tipoDado) {
     default:
         alert("algo deu errado!");
         break;
+}
 }
 //saída de dados
 // imprimir na tela a taxa de mortalidade ou natalidade

@@ -12,6 +12,7 @@
 //entrada de dados
 // = determinar se o cliente é 1- cliente, 2- funcionário e 3-vip
 // = informar o total da compra 
+export function Desconto(){
 let opcoes= parseInt(prompt(`você é cliente 
 1-Cliente
 2-Funcionario
@@ -37,6 +38,7 @@ switch (opcoes) {
     default:
         alert("Digite algum valor");
         break;
+}
 }
 //saída de dados
 // = se for cliente não haverá desconto

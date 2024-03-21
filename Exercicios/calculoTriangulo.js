@@ -9,6 +9,7 @@
 
 //entrada de dados
 // = informar as 3 medidas de um triangulo
+export function CalcTriangulo(){
 
 let lado1=prompt("Digite o primeiro lado do triangulo");
 let lado2=prompt("Digite o segundo lado do triangulo");
@@ -30,6 +31,7 @@ else if(lado1 != lado2 != lado3){
 }
 else{
     alert("digite algum valor");
+}
 }
 //saida de dados
 // = informar se o triangulo é equilátero, escaleno ou isócele

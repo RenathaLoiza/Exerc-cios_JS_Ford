@@ -18,6 +18,7 @@
 //entrada de dados
 // = selecionar se deseja abastecer com alcool ou com gasolina;
 // = selecionar a quantidade de litros que o usuário deseja;
+export function Gasolina() {
 let opcoesCombustiveis =prompt(`Qual combustivel você deseja abastecer 
 A-álcool valor  R$ 4,90
 G-gasolina valor R$ 5,30`).toUpperCase();
@@ -31,13 +32,13 @@ switch (opcoesCombustiveis){
             let valorLitro = litros * 4.90;
             let valorDescon3 = valorLitro * 0.03;
             
-            alert(`você tera um desconto de 3% valor a pagar ${ valorLitro - valorDescon3}`);
+            alert(`você tera um desconto de 3% ${valorDescon3} valor a pagar ${ valorLitro - valorDescon3} reais`);
         }
         else if( litros > 20 ){
             let valorLitro = litros * 4.90;
             let valorDescon5 = valorLitro * 0.05;
             
-            alert(`você tera um desconto de 3% valor a pagar ${valorLitro - valorDescon5}`);
+            alert(`você tera um desconto de 3% ${valorDescon5} valor a pagar ${valorLitro - valorDescon5} reais`);
 
         }
         else{
@@ -50,13 +51,13 @@ switch (opcoesCombustiveis){
             let valorLitro= litros * 5.30;
             let valorDescon4 = valorLitro * 0.04;
             
-            alert(`você tera um desconto de 3% valor a pagar ${valorLitro - valorDescon4}`);
+            alert(`você tera um desconto de 3% ${valorDescon4} valor a pagar ${valorLitro - valorDescon4} reais`);
         }
         else if ( litros > 20 ){
             let valorLitro = litros * 5.30;
             let valorDescon6 = valorLitro * 0.06;
             
-            alert(`você tera um desconto de 3% valor a pagar ${valorLitro - valorDescon6}`);
+            alert(`você tera um desconto de 3% ${valorDescon6} valor a pagar ${valorLitro - valorDescon6} reais`);
         }
         else{
             alert("VOCÊ DIGITOU ALGO ERRADO");
@@ -69,4 +70,4 @@ switch (opcoesCombustiveis){
 }
 //saida de dados
 // = mostrar a porcentagem de desconto se for alcool ou se for gasolina
-
+}

@@ -4,6 +4,7 @@
 //entrada de dados
 // = informar os dois times de futebol
 // = informar o placar do jogo
+export function Placar() {
 let time1= prompt("Digite o nome do primeiro time");
 let time1gol=parseInt(prompt("digite a quantidade de gols do primeiro time"));
 let time2= prompt("Digite o nome do segundo time");
@@ -23,6 +24,7 @@ ${time1} ${time1gol} X ${time2} ${time2gol}`);
 }
 else{
     alert("verifique se você digitou todas as informações");
+}
 }
 
 //processamento

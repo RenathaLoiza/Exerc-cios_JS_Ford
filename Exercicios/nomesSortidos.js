@@ -5,9 +5,10 @@
 
 // let nome = [prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "), prompt("Digite um nome: "),prompt("Digite um nome: ") ];
 
-<<<<<<< HEAD
+export function sortear(){
 let nomes=[]
 let quantidade= parseInt(prompt("Quantos nomes deseja colocar na lista"));
+let bucarNome=("Digite o nome que deseja procurar");
 for (let i =0; i< quantidade; i++ ){
     let nome =prompt("Qual seu nome?");
     nomes.push(nome);
@@ -15,18 +16,13 @@ for (let i =0; i< quantidade; i++ ){
 let nomeBusca=prompt("Qual nome deseja buscar");
 let encontrado = nomes.includes(nomeBusca)
 
+
 if (encontrado){
     alert(`ACHEI o nome ${nomeBusca}`);
 }
 else{
     alert(`Não achei o nome ${nomeBusca}`);
-=======
-let bucarNome=("Digite o nome que deseja procurar);
 
-  if(bucarNome === nome){
-   alert(`O nome ${bucarNome} está na lista`);
-  }
-else {
-  alert(`O nome ${bucarNome} não esta na lista`);
->>>>>>> 6ed92e8b3aa132011b3140f8e5f6174174a213cc
+
 }
+} 

@@ -32,7 +32,7 @@ let total2=(quantidadeProduto*precoUnitario)*0.05
 // - Se quantidade > 10 o desconto será de 5%
 
 if(quantidadeProduto <= 5){
-    alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 2% ${(quantidadeProduto*precoUnitario)*0.02} reais ${}`);
+    alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario}, você tera um desconto de 2% ${(quantidadeProduto * precoUnitario)*0.02} reais `);
 
 }
 else if(quantidadeProduto >5 && quantidadeProduto <=10){
@@ -40,7 +40,7 @@ else if(quantidadeProduto >5 && quantidadeProduto <=10){
 
 }
 else {
-    alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario} , você tera um desconto de 5% ${(quantidadeProduto *precoUnitario)*0.05} reais`);
+    alert(`Seu produto ${nomeProduto}, quantidade ${quantidadeProduto}, e o seu preço ${precoUnitario} , você tera um desconto de 5% ${(quantidadeProduto * precoUnitario)*0.05} reais`);
 }
 
 //saída de dados

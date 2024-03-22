@@ -22,7 +22,7 @@ if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3){
  alert("o triangulo é Equilátero ")
 }
 
-else if (lado1 == lado2 && lado1 != lado3  && lado2 !=lado3  || lado1 == lado3 && lado1 != lado2 && lado3 !=lado2 || lado2 == lado3 && lado2 != lado1 && lado3 != lado1){
+else if (lado1 == lado2 || lado2 == lado3 || lado1 == lado3){
     alert("O triangulo é Isóscele")
 }
 

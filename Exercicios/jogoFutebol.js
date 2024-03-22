@@ -13,14 +13,14 @@ let time2gol=parseInt(prompt("digite a quantidade de gols do segundo time"));
 
 if(time1gol > time2gol){
 alert(`O time ${time1}com ${time1gol} e uma diferença de ${time1gol-time2gol} e o placar 
-${time1} ${time1gol} X ${time2} ${time2gol}`);
+${time1} ${time1gol}  X  ${time2} ${time2gol}`);
 }
 else if(time1gol == time2gol){
-    alert(`Os times estão empatados e o placar ${time1} ${time1gol} X ${time2} ${time2gol}`);
+    alert(`Os times estão empatados e o placar ${time1} ${time1gol}  X  ${time2} ${time2gol}`);
 }
 else if(time1gol < time2gol){
 alert(`Os time ${time2} ganhou com ${time2gol} e uma diferença de ${time2gol-time1gol} e o placar 
-${time1} ${time1gol} X ${time2} ${time2gol}`);
+${time1} ${time1gol}  X  ${time2} ${time2gol}`);
 }
 else{
     alert("verifique se você digitou todas as informações");

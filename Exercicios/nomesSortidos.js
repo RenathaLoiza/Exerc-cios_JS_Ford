@@ -8,7 +8,7 @@
 export function sortear(){
 let nomes=[]
 let quantidade= parseInt(prompt("Quantos nomes deseja colocar na lista"));
-let bucarNome=("Digite o nome que deseja procurar");
+
 for (let i =0; i< quantidade; i++ ){
     let nome =prompt("Qual seu nome?");
     nomes.push(nome);

@@ -22,9 +22,11 @@ N-Natalidade
 M-Mortalidade`);
         if(tipoDado !== "N" && !== "M"){
             alert("ERRO: opção invalida digite N para natalidade OU M para mortalidade ");
+        }else{
+            break;
         }
         
-    }while(tipoDado !== "N" && !== "M");
+    }while(true);
         
     
 

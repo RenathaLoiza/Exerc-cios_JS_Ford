@@ -16,11 +16,11 @@
 // determinar com switch case se o usuario vai querer calcular natalidade ou mortalidade
 export function Mortalidade() {
     let tipoDado;
-    do{
+    do {
         tipoDado =prompt(`Qual voce deseja calcular
 N-Natalidade
-M-Mortalidade`);
-        if(tipoDado !== "N" && !== "M"){
+M-Mortalidade`).toUpperCase();
+        if(tipoDado !== "N" && tipoDado !== "M"){
             alert("ERRO: opção invalida digite N para natalidade OU M para mortalidade ");
         }else{
             break;
@@ -31,15 +31,34 @@ M-Mortalidade`);
     
 
     let numeroHabitantes;
-    let quantidadeCrianca = parseInt(prompt("Quantas crianças nasceram"));
+    let quantidadeNascimentos;
+    do{
+    quantidadeNascimentos= parseInt(prompt("Quantas crianças nasceram"));
+    if(isNaN(quantidadeNascimentos)){
+        alert("Digite o NÚMERO de NASCIMENTOS");
+    }else{
+        break;
+    }
+}while(true);
+    
     do{
        numeroHabitantes = parseInt(prompt("Quantos habitantes tem?")); 
         if(isNaN(numeroHabitantes) ){
             alert("Digite o NÚMERO de HABITANTES")
+        }else{
+            break;
         }
-    }whele(isNaN(numeroHabitantes));
+    }while(true);
 
-let numeroObito = parseInt(prompt("Quantos habiantes morreram?"));
+let numeroObito;
+do{
+numeroObito= parseInt(prompt("Quantos habiantes morreram?"));
+if(isNaN(numeroObito)){
+    alert("Digite o NÚMERO de OBITOS");
+}else{
+    break;
+}
+}while(true);
 
 switch (tipoDado) {
     case "N":

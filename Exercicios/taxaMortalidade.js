@@ -40,11 +40,11 @@ M-Mortalidade`);
 let numeroObito = parseInt(prompt("Quantos habiantes morreram?"));
 
 switch (tipoDado) {
-    case 1:
+    case "N":
         let taxaNatalidade = (quantidadeCrianca * 1000) /numeroHabitantes;
         alert(`A quantidade de criança nascidas ${quantidadeCrianca} e a taxa de natalidade ${taxaNatalidade}`);
         break;
-    case 2:
+    case "M":
         let taxaMortalidade = (numeroObito * 1000) /numeroHabitantes;
         alert(`A quantidade de óbitos ${numeroObito} e a taxa de mortalidade ${taxaMortalidade}`);
         break;

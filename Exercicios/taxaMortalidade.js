@@ -11,16 +11,34 @@
 // verificar o que o usuario vai querer calcular (natalidade ou mortalidade)
 // determinar o número de crianças nascidas e o número de habitantes para natalidade
 // determinar o número de óbitos e o número de habitantes para mortalidade
-export function Mortalidade() {
-let tipoDado =parseInt(prompt(`Qual voce deseja calcular
-1-Natalidade
-2-Mortalidade`));
-let quantidadeCrianca = parseInt(prompt("Quantas crianças nasceram"));
-let numeroHabitantes = parseInt(prompt("Quantos habitantes tem?"));
-let numeroObito = parseInt(prompt("Quantos habiantes morreram?"));
 //processamento de dados
 // realizar o calculo de natalidade e mortalidade 
 // determinar com switch case se o usuario vai querer calcular natalidade ou mortalidade
+export function Mortalidade() {
+    let tipoDado;
+    do{
+        tipoDado =prompt(`Qual voce deseja calcular
+N-Natalidade
+M-Mortalidade`);
+        if(tipoDado !== "N" && !== "M"){
+            alert("ERRO: opção invalida digite N para natalidade OU M para mortalidade ");
+        }
+        
+    }while(tipoDado !== "N" && !== "M");
+        
+    
+
+    let numeroHabitantes;
+    let quantidadeCrianca = parseInt(prompt("Quantas crianças nasceram"));
+    do{
+       numeroHabitantes = parseInt(prompt("Quantos habitantes tem?")); 
+        if(isNaN(numeroHabitantes) ){
+            alert("Digite o NÚMERO de HABITANTES")
+        }
+    }whele(isNaN(numeroHabitantes));
+
+let numeroObito = parseInt(prompt("Quantos habiantes morreram?"));
+
 switch (tipoDado) {
     case 1:
         let taxaNatalidade = (quantidadeCrianca * 1000) /numeroHabitantes;
